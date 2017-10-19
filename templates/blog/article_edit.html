@@ -1,0 +1,231 @@
+{% load staticfiles %}
+{% load blog_tags %}
+{% load blogauth_filter %}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    {% block head %}
+    {% endblock head %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{% static '/css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
+
+
+    <link href="{% static '/js/bootstrap.js' %}" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    {#        <link href="navbar-fixed-top.css" rel="stylesheet"> 直接用style代替#}
+    <style>
+        body {
+            min-height: 2000px;
+            padding-top: 70px;
+        }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="https://v3.bootcss.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+
+            <div class=" col-md-1"></div>
+
+            <div class="col-xs-12 col-sm-12 col-md-10">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only"> </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'index' %}" style="font-size:28px;">MyBlog</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'index' %}">首页</a></li>
+                        <li><a href="{% url 'allblogs' %}">所有博客</a></li>
+                        <li class="active"><a href="{% url 'write' %}">发表文章</a></li>
+                        <li><a href="{% url 'about' %}">作者简历</a></li>
+
+                    </ul>
+
+                    {#                    action="{% url 'haystack_search' %}#}
+                    {% if user.is_authenticated %}
+                        <form role="search" method="get" class="navbar-form navbar-right"
+                              action="{% url 'haystack_search' %}">
+                            <div class="form-group">
+                                <input type="search" name="q" placeholder="搜索" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-md btn-primary"><span
+                                    class="glyphicon glyphicon-search"
+                                    aria-hidden="true"></span> Search
+                            </button>
+
+
+                            <div class="form-group dropdown text-center">
+                                <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false" style="padding-right: 0px;">
+                        <span class="glyphicon glyphicon-user"
+                              aria-hidden="true"></span>
+                                    <span> {{ user.username }}</span>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a href="#"> 我的主页</a></li>
+                                    <li><a href="{% url 'blogauth:password_change' %}">修改密码</a></li>
+                                    <li><a href="{% url 'blogauth:logout' %}">退出</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    {% else %}
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button class='btn btn-lg btn-primary'
+                                        onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
+                        <span class="glyphicon glyphicon-user "
+                              aria-hidden="true"></span>登录
+                                </button>
+                            </li>
+                        </ul>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class=" col-md-1"></div>
+        <div class="col-xs-12 col-sm-10 col-md-10">
+
+
+            <form method="POST" action="{% url 'write' %}">
+                {% csrf_token %}
+
+                {{ form.title.label_tag }}
+                {{ form.title | addwidget:"{'class':'form-control'}" }}
+                {{ form.title.errors }}
+
+                {#                {{ form.excerpt.label_tag }}#}
+                {#                {{ form.excerpt | addwidget:"{'class':'form-control'}" }}#}
+                {#                {{ form.excerpt.errors }}#}
+
+                {{ form.body.label_tag }}
+                <div class="markdownx row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <textarea name="body" cols="40" rows="10" class="form-control markdownx-editor"
+                                  style="height: 500px; transition: opacity 1s ease;" required=""
+                                  id="id_body"
+                                  data-markdownx-editor-resizable=""
+                                  data-markdownx-urls-path="/markdownx/markdownify/"
+                                  data-markdownx-upload-urls-path="/markdownx/upload/"
+                                  data-markdownx-latency="500"></textarea>
+
+                    </div>
+
+                    <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog"
+                         aria-labelledby="gridModalLabel" style="display: none;">
+
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+
+                                <div class="markdownx-preview"><p></p></div>
+
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="markdownx-preview"><p></p></div>
+                    </div>
+                </div>
+                {{ form.category.label_tag }}
+                {{ form.category | addwidget:"{'class':'form-control'}" }}
+                {{ form.category.errors }}
+                {#                <div class="form-control">#}
+                {#                    {{ form }}#}
+                {#                </div>#}
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#gridSystemModal">
+                    预览
+                </button>
+                <button type="submit" class="btn btn-primary btn-lg">发表文章</button>
+                <span class="text-warning btn-lg">极为简单的文章编辑界面，原谅我浮生偷闲懒优化</span>
+            </form>
+
+            {{ form.media }}
+
+
+        </div>
+
+    </div>
+
+</div><!-- /.container -->
+
+
+<footer id="site-footer" class="text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p class="copyright">&copy 2017 - 模板源自<a href="http://http://v3.bootcss.com/"
+                                                         target="_blank" title="模板之家">Bootstrap官网</a>
+                    - 由<a href="#" title="作者君" target="_blank">蝉鸣一夏</a>修改
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'jquery/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static '/js/ie10-viewport-bug-workaround.js' %}"></script>
+</body>
+</html>
+
+

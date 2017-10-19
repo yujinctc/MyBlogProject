@@ -1,0 +1,185 @@
+{% extends 'base_home.html' %}
+{% load highlight %}
+{% load blog_tags %}
+
+
+{% block nav_bar %}
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'index' %}">首页</a></li>
+            <li><a href="{% url 'allblogs' %}">所有博客</a></li>
+            <li><a href="{% url 'about' %}">作者简历</a></li>
+            <li><a href="#contact">联系</a></li>
+
+        </ul>
+
+        {#            action="{% url 'haystack_search' %}#}
+        {% if user.is_authenticated %}
+            <form role="search" method="get" class="navbar-form navbar-right" action="{% url 'haystack_search' %}">
+                <div class="form-group">
+                    <input type="search" placeholder="搜索" name="q" class="form-control" required>
+{#                    {{ form.as_p}}#}
+                </div>
+                <button type="submit" class="btn btn-md btn-primary" value="search"><span class="glyphicon glyphicon-search"
+                                                                           aria-hidden="true"></span> Search
+                </button>
+
+
+                <div class="form-group dropdown text-center">
+                    <a href="#" class="dropdown-toggle btn-lg" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false" style="padding-right: 0px;">
+                        <span class="glyphicon glyphicon-user"
+                              aria-hidden="true"></span>
+                        <span> {{ user.username }}</span>
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a href="#"> 我的主页</a></li>
+                        <li><a href="{% url 'blogauth:password_change' %}">修改密码</a></li>
+                        <li><a href="{% url 'blogauth:logout' %}">退出</a></li>
+                    </ul>
+                </div>
+            </form>
+        {% else %}
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button class='btn btn-lg btn-primary'
+                            onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
+                        <span class="glyphicon glyphicon-user "
+                              aria-hidden="true"></span>登录
+                    </button>
+                </li>
+            </ul>
+        {% endif %}
+
+    </div>
+
+{% endblock nav_bar %}
+
+{% block blog_main %}
+
+    <style>
+        span.highlighted {
+            color: #ea705a;
+        }
+    </style>
+    {% if query %}
+        {% for result in page.object_list %}
+            <article class="post post-{{ result.object.pk }}">
+                <header class="entry-header">
+                    <h1 class="entry-title">
+                        <a href="{{ result.object.get_absolute_url }}">{% highlight result.object.title with query %}</a>
+                    </h1>
+                    <div class="entry-meta">
+                    <span class="post-category">
+                        <a href="{% url 'blog:category' result.object.category.pk %}">
+                            分类:{{ result.object.category.name }}&nbsp;&nbsp;&nbsp;</a></span>
+                        <span class="post-date"><a href="#">
+                            <time class="entry-date" datetime="{{ result.object.created_time }}">
+                                创作时间:{{ result.object.created_time }}&nbsp;&nbsp;&nbsp;</time></a></span>
+                        <span class="post-author"><a href="#">作者:{{ result.object.author }}&nbsp;&nbsp;&nbsp;</a></span>
+{#                        <span class="comments-link">#}
+{#                        <a href="{{ result.object.get_absolute_url }}#comment-area">#}
+{#                            {{ result.object.comment_set.count }} 评论</a></span>#}
+{#                        <span class="views-count"><a#}
+{#                                href="{{ result.object.get_absolute_url }}">{{ result.object.views }} 阅读</a></span>#}
+                    </div>
+                </header>
+                <div class="entry-content clearfix">
+                    <p>{% highlight result.object.body with query %}</p>
+                    <div class="read-more cl-effect-14">
+                        <a href="{{ result.object.get_absolute_url }}" class="more-link">继续阅读 <span
+                                class="meta-nav">→</span></a>
+                    </div>
+                </div>
+            </article>
+        {% empty %}
+            <div class="no-post">没有搜索到你想要的结果！</div>
+        {% endfor %}
+        {% if page.has_previous or page.has_next %}
+            <div>
+                {% if page.has_previous %}
+                    <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous
+                {% if page.has_previous %}</a>{% endif %}
+                |
+                {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next
+                &raquo;{% if page.has_next %}</a>{% endif %}
+            </div>
+        {% endif %}
+    {% else %}
+        请输入搜索关键词，例如 django
+    {% endif %}
+
+
+
+{% endblock blog_main %}
+
+
+{% block blog_sidebar %}
+
+    <div class="sidebar-module">
+        <h4>最新文章</h4>
+        {% get_recent_posts as recent_post_list %}
+        <ol class="list-unstyled">
+            {% for post in recent_post_list %}
+                <li>
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </li>
+            {% empty %}
+                暂无文章！
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="sidebar-module">
+        <h4>归档</h4>
+        {% get_archives as date_list %}
+        <ol class="list-unstyled">
+            {% for date in date_list %}
+                <li>
+                    {#                            这个模板标签的作用是解析视图函数 blog:archives 对应的 URL 模式，并把 URL 模式中的年和月替换成 date.year，date.month 的值#}
+                    <a href="{% url 'blog:archives' date.year date.month %}">{{ date.year }} 年 {{ date.month }} 月</a>
+                </li>
+            {% empty %}
+                暂无归档！
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="sidebar-module">
+        <h4>分类</h4>
+        {% get_categories as category_list %}
+        <ol class="list-unstyled">
+            {% for category in category_list %}
+                <li>
+                    <a href="{% url 'blog:category' category.pk %}">{{ category.name }} <span
+                            class="post-count">({{ category.num_posts }})</span></a>
+                </li>
+            {% empty %}
+                暂无分类！
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="sidebar-module">
+        <h4>标签云</h4>
+        {% get_tags as tag_list %}
+        <ol class="list-unstyled">
+            {% for tag in tag_list %}
+                <li>
+                    <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}</a>
+                </li>
+            {% empty %}
+                暂无标签！
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="sidebar-module">
+        {#                    {% url 'rss' %}#}
+        <a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+    </div>
+
+
+{% endblock blog_sidebar %}
