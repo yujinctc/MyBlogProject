@@ -23,7 +23,7 @@ def get_archives(context,num=24):
     try:
         user=context['user']
 
-        return Article.objects.filter (author=user).dates ('created_time', 'month', order='DESC')[:num]
+        return Article.objects.filter(author=user).dates ('created_time', 'month', order='DESC')[:num]
 
     except Exception :
         pass
@@ -47,7 +47,7 @@ def get_categories(context,num=10):
     # Count 计算分类下的文章数，其接受的参数为需要计数的模型的名称
     try:
         user=context['user']
-
+        user = context['user']
         return Category.objects.filter(article__author=user).annotate(num_posts=Count('article')).filter(num_posts__gt=0)[:num]
 
     except Exception :

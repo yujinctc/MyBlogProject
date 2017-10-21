@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v&o^+w2v6gjojhnyxhcp*wu6+d3t^0tx#mz_zj&fm3ks@d)yk*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # *表示允许所有域名，并不推荐这么干。
 ALLOWED_HOSTS = ['*',]
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'blog',
     'comments',
     'markdownx',
+    'gunicorn',
 ]
 
 HAYSTACK_CONNECTIONS = {
@@ -198,21 +199,34 @@ AUTHENTICATION_BACKENDS = (
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
+# 以下安全选项涉及的默认值均为False，
 
+# 默认值为0，一般生产上设为31536000秒，一年，意思是告诉浏览器，看到https协议头，就要在这段时间内拒绝http访问你的域名。
 SECURE_HSTS_SECONDS = 60
 
+# 将HTTP链接永久地（HTTP 301，permanently）重定向到HTTPS连接。一般别开启该选项，会造成http直接跳转到https的，还得清理浏览器缓存才能恢复。
+SECURE_SSL_REDIRECT = False
+
+#如果True，则SecurityMiddleware在尚未拥有它的所有响应上设置X-Content-Type-Options: nosniff，
+# nosniff选项意味着防止浏览器猜测内容类型，并强制它始终使用Content-Type标题中提供的类型，
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
+# 如果True，SecurityMiddleware设置X-XSS-Protection: 1; mode=block,这将在浏览器中启用XSS筛选器，并强制它始终阻止可疑的XSS攻击。
+# 这是个有效手段，但是不能保证检测到所有的XSS攻击，也不是所有浏览器都支持。
 SECURE_BROWSER_XSS_FILTER = True
 
-SECURE_SSL_REDIRECT = False  #一般别开启该选项，会造成http直接跳转到https的，还得清理浏览器缓存才能恢复。
-
+# 如果True，SecurityMiddleware将preload指令添加到HTTP Strict Transport Security头。 参考资料https://developer.mozilla.org/zh-CN/docs/Web/HTML/Preloading_content；
+# 仅仅当SECURE_HSTS_SECONDS设置为非零值，它才起作用。
 SECURE_HSTS_PRELOAD = True
 
+# 如果True，则SecurityMiddleware将includeSubDomains指令添加到HTTP Strict Transport Security头。
+# 仅仅当SECURE_HSTS_SECONDS设置为非零值，它才起作用。
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
-SESSION_COOKIE_SECURE = True
+# 默认值：False，如果此设置为True，则Cookie将被标记为“安全”，这意味着浏览器可以确保该Cookie仅在HTTPS连接下发送。
+SESSION_COOKIE_SECURE = False
 
-CSRF_COOKIE_SECURE = True
+# 默认值：False，如果将此设置为True，则Cookie将被标记为“安全”，这意味着浏览器可能会确保Cookie仅使用HTTPS连接发送。
+CSRF_COOKIE_SECURE = False
 
 X_FRAME_OPTIONS  = 'DENY'

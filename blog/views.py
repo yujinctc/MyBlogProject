@@ -25,10 +25,10 @@ from comments.forms import CommentForm
 #     return render(request, 'blog/detail.html', context={'post': post})
 
 
-class IndexView(LoginRequiredMixin,ListView):
+class IndexView(ListView):  #LoginRequiredMixin
 
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
+    # login_url = '/login'
+    # redirect_field_name = 'redirect_to'
 
     model = Article
     template_name = 'home.html'
@@ -52,7 +52,13 @@ class IndexView(LoginRequiredMixin,ListView):
         # self.request.user
 
         # 获取当前用户名下的博客文章，
-        context['article_list']= Article.objects.filter(author=self.request.user).order_by('-created_time')
+        if self.request.user == 'AnonymousUser':
+            context['article_list'] = Article.objects.all ().order_by ('-created_time')
+        else:
+            try:
+                context['article_list'] = Article.objects.filter (author=self.request.user).order_by ('-created_time')
+            except:
+                context['article_list'] = Article.objects.all ().order_by ('-created_time')
 
         # 父类生成的字典中已有 paginator、page_obj、is_paginated 这三个模板变量，
         # paginator 是 Paginator 的一个实例，
@@ -174,10 +180,10 @@ class IndexView(LoginRequiredMixin,ListView):
         return data
 
 
-class AllBlogsView(LoginRequiredMixin,ListView):
+class AllBlogsView(ListView): #LoginRequiredMixin
 
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
+    # login_url = '/login'
+    # redirect_field_name = 'redirect_to'
 
     model = Article
     template_name = 'allblogs.html'
@@ -199,8 +205,15 @@ class AllBlogsView(LoginRequiredMixin,ListView):
         # context = super().get_context_data(**kwargs)
         context =  super(AllBlogsView, self).get_context_data(**kwargs)
 
-        # self.request.user
 
+        # 获取当前用户名下的博客文章，
+        if self.request.user == 'AnonymousUser':
+            context['article_list'] = Article.objects.all ().order_by ('-created_time')
+        else:
+            try:
+                context['article_list'] = Article.objects.filter (author=self.request.user).order_by ('-created_time')
+            except:
+                context['article_list'] = Article.objects.all ().order_by ('-created_time')
 
         # 父类生成的字典中已有 paginator、page_obj、is_paginated 这三个模板变量，
         # paginator 是 Paginator 的一个实例，

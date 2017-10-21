@@ -72,7 +72,7 @@
                     {% endif %}
                 </a></span>
                 <span class="post-date"><a href="#"><time class="entry-date"
-                                                          datetime="{{ article.created_time }}">创作时间:{{ article.created_time }}&nbsp;&nbsp;&nbsp;</time></a></span>
+                                                          datetime="{{ article.created_time }}">创作时间:{{ article.created_time| date:"Y-m-d"  }}&nbsp;&nbsp;&nbsp;</time></a></span>
                 <span class="post-author"><a href="#">作者:{{ article.author }}&nbsp;&nbsp;&nbsp;</a></span>
                 {#                <span class="comments-link"><a href="#">4 评论</a></span>#}
                 {#                <span class="views-count"><a href="#">588 阅读</a></span>#}

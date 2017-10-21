@@ -14,7 +14,7 @@ from .forms import RegisterForm
 
 from django.contrib.auth.decorators import login_required
 
-@login_required
+
 def index(request):
     return render(request, 'home.html')
 
@@ -66,10 +66,12 @@ class RegisterView(TemplateView):
 
     template_name = 'blogauth/register.html'
 
+
+
     login_form = AuthenticationForm ()
 
     def get(self, request, *args, **kwargs):
-        redirect_to = request.POST.get ('next', request.GET.get ('next', ''))
+        redirect_to = request.GET.get ('next', request.GET.get ('next', ''))
         register_form = self.form_class()
         return render(request, self.template_name, context={'register_form': register_form,'login_form':self.login_form, 'next': redirect_to})
 
