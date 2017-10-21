@@ -2,107 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b6a6ad-5744-40dc-9125-68d92efec1be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/micons/fonts/icomoon.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/micons/fonts/icomoon.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/micons/fonts/icomoon.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bolditalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bolditalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bolditalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-italic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-italic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-italic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-bold-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-light-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-medium-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-medium-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-medium-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-medium-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-regular-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-semibold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-semibold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-semibold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-semibold-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/intro-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/beetle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/clouds.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/liberty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/lighthouse.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-beetle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-clouds.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-liberty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-lighthouse.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-salad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/modals/m-shutterbug.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/profile-pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/salad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/portfolio/shutterbug.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/profile-pic-old.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/images/sample-image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/resume/images/profile-pic.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/resume/images/profile-pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogauth/migrations/0002_auto_20171020_1730.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/micons/fonts/icomoon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/micons/micons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/css/vendor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-bolditalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-italic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/lora-regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/lora/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-medium-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/poppins-semibold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/fonts/poppins/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/inc/sendEmail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/js/jquery-2.1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/js/modernizr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/js/pace.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collected_static/resume/styles.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/resume/images/profile-pic.jpg" afterPath="$PROJECT_DIR$/collected_static/resume/images/profile-pic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlogProject/settings.py" afterPath="$PROJECT_DIR$/MyBlogProject/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlogProject/urls.py" afterPath="$PROJECT_DIR$/MyBlogProject/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" afterPath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogauth/models.py" afterPath="$PROJECT_DIR$/blogauth/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogauth/views.py" afterPath="$PROJECT_DIR$/blogauth/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myblog_wsgi.ini" afterPath="$PROJECT_DIR$/myblog_wsgi.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/allblogs.html" afterPath="$PROJECT_DIR$/templates/allblogs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_home.html" afterPath="$PROJECT_DIR$/templates/base_home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/resume/index.html" afterPath="$PROJECT_DIR$/templates/resume/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,74 +50,18 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="allblogs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/allblogs.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="74" column="139" lean-forward="false" selection-start-line="74" selection-start-column="139" selection-end-line="74" selection-end-column="139" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBlogProject/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-383">
-              <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="302">
+              <caret line="412" column="0" lean-forward="true" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
               <folding>
-                <element signature="n#block#1;n#!!top" expanded="false" />
-                <element signature="n#for#0;n#!!top" expanded="false" />
-                <element signature="e#4202#5314#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base_home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="95" column="76" lean-forward="false" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/resume/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="111" column="25" lean-forward="true" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-              <folding>
-                <element signature="e#3645#3651#0#HTML" expanded="true" />
-                <element signature="e#3651#3657#0#HTML" expanded="true" />
-                <element signature="e#3657#3663#0#HTML" expanded="true" />
-                <element signature="e#3663#3669#0#HTML" expanded="true" />
-                <element signature="e#3669#3675#0#HTML" expanded="true" />
-                <element signature="e#3675#3681#0#HTML" expanded="true" />
-                <element signature="e#3681#3687#0#HTML" expanded="true" />
-                <element signature="e#3687#3693#0#HTML" expanded="true" />
+                <element signature="e#2#17#0" expanded="true" />
+                <element signature="e#859#5949#0" expanded="false" />
+                <element signature="e#11106#11148#0" expanded="false" />
+                <element signature="e#11180#11999#0" expanded="false" />
+                <element signature="e#12042#12391#0" expanded="false" />
+                <element signature="e#12425#12724#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -266,8 +110,8 @@
       <find>home</find>
       <find>_</find>
       <find>{</find>
-      <find>profile-pic.jpg</find>
       <find>/images/profile-pic.jpg</find>
+      <find>profile-pic.jpg</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{%static</replace>
@@ -325,11 +169,11 @@
         <option value="$PROJECT_DIR$/blogauth/views.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/blog_tags.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/templates/allblogs.html" />
         <option value="$PROJECT_DIR$/MyBlogProject/settings.py" />
         <option value="$PROJECT_DIR$/templates/resume/index.html" />
         <option value="$PROJECT_DIR$/templates/base_home.html" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
       </list>
     </option>
   </component>
@@ -370,106 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlogProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collected_static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -747,13 +491,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30042315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32630098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@MyBlogProject" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5049365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31688127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1176,17 +921,9 @@
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#28#79#0" expanded="true" />
+            <element signature="e#28#79#0" expanded="false" />
             <element signature="e#1868#2883#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myblog_wsgi.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="32" column="107" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,16 +948,16 @@
     <entry file="file://$PROJECT_DIR$/templates/resume/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="111" column="25" lean-forward="true" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+          <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
           <folding>
-            <element signature="e#3645#3651#0#HTML" expanded="true" />
-            <element signature="e#3651#3657#0#HTML" expanded="true" />
-            <element signature="e#3657#3663#0#HTML" expanded="true" />
-            <element signature="e#3663#3669#0#HTML" expanded="true" />
-            <element signature="e#3669#3675#0#HTML" expanded="true" />
-            <element signature="e#3675#3681#0#HTML" expanded="true" />
-            <element signature="e#3681#3687#0#HTML" expanded="true" />
-            <element signature="e#3687#3693#0#HTML" expanded="true" />
+            <element signature="e#3645#3651#0#HTML" expanded="false" />
+            <element signature="e#3651#3657#0#HTML" expanded="false" />
+            <element signature="e#3657#3663#0#HTML" expanded="false" />
+            <element signature="e#3663#3669#0#HTML" expanded="false" />
+            <element signature="e#3669#3675#0#HTML" expanded="false" />
+            <element signature="e#3675#3681#0#HTML" expanded="false" />
+            <element signature="e#3681#3687#0#HTML" expanded="false" />
+            <element signature="e#3687#3693#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1228,7 +965,7 @@
     <entry file="file://$PROJECT_DIR$/templates/blog/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1240,7 +977,6 @@
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
             <element signature="n#for#0;n#!!top" expanded="false" />
-            <element signature="e#4202#5314#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1258,23 +994,32 @@
         <state relative-caret-position="271">
           <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
-            <element signature="e#647#660#0" expanded="true" />
+            <element signature="e#647#660#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
+    <entry file="file://$PROJECT_DIR$/MyBlogProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="182" column="49" lean-forward="false" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-            <element signature="e#859#5949#0" expanded="false" />
-            <element signature="e#11106#11148#0" expanded="false" />
-            <element signature="e#11180#11999#0" expanded="false" />
-            <element signature="e#12042#12391#0" expanded="false" />
-            <element signature="e#12425#12724#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myblog_wsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="32" column="107" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="95" column="76" lean-forward="false" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,19 +1031,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlogProject/settings.py">
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="95" column="76" lean-forward="false" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
-          <folding />
+        <state relative-caret-position="302">
+          <caret line="412" column="0" lean-forward="true" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#859#5949#0" expanded="false" />
+            <element signature="e#11106#11148#0" expanded="false" />
+            <element signature="e#11180#11999#0" expanded="false" />
+            <element signature="e#12042#12391#0" expanded="false" />
+            <element signature="e#12425#12724#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
