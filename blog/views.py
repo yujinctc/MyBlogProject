@@ -418,7 +418,7 @@ class ArticleEditView(LoginRequiredMixin,TemplateView):
             if form.is_valid ():
                 article = form.save (commit=False)
 
-                article.save()
+                # article.save()
 
                 article.author = author
 
