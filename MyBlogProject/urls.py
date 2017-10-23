@@ -27,8 +27,9 @@ urlpatterns = [
 
     url (r'^$', blogviews.IndexView.as_view (), name='index'),
     url (r'^index', blogviews.IndexView.as_view (), name='index'),
+    # url (r'^index', blogviews.listing, name='index'),
 
-    url (r'^allblogs', blogviews.AllBlogsView.as_view (), name='allblogs'),
+    url (r'^myblog', blogviews.MyBlogView.as_view (), name='myblog'),
 
     url (r'^about', blogviews.about, name='about'),
 

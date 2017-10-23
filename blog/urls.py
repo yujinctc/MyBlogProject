@@ -22,8 +22,8 @@ app_name = 'blog'
 
 urlpatterns = [
 
-    url(r'^$', views.IndexView.as_view(), name='index'),
-    url (r'^index', views.IndexView.as_view(), name='index'),
+    url(r'^$', views.MyBlogView.as_view(), name='index'),
+    url (r'^index', views.MyBlogView.as_view(), name='index'),
     url(r'^article/(?P<pk>[0-9]+)/$', views.detail, name='detail'),
     url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives'),
     url(r'^category/(?P<pk>[0-9]+)/$', views.category, name='category'),

@@ -18,6 +18,7 @@ from . import views
 from django.contrib.auth import views as authviews
 
 app_name = 'blogauth'
+
 urlpatterns = [
 
     url (r'^register/', views.register, name='register'),

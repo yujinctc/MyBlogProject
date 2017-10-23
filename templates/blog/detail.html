@@ -8,7 +8,7 @@
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="{% url 'index' %}">首页</a></li>
-            <li><a href="{% url 'allblogs' %}">所有博客</a></li>
+            <li><a href="{% url 'myblog' %}">我的博客</a></li>
             <li><a href="{% url 'write' %}">发表文章</a></li>
             <li><a href="{% url 'about' %}">作者简历</a></li>
 
@@ -36,7 +36,7 @@
                         <span> {{ user.username }}</span>
                     </a>
                     <ul class="dropdown-menu ">
-                        <li><a href="#"> 我的主页</a></li>
+                        <li><a href="{% url 'myblog' %}"> 我的主页</a></li>
                         <li><a href="{% url 'blogauth:password_change' %}">修改密码</a></li>
                         <li><a href="{% url 'blogauth:logout' %}">退出</a></li>
                     </ul>
