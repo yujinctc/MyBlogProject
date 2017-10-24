@@ -54,6 +54,7 @@ urlpatterns = [
     url (r'^static/(?P<path>.*)$', django.views.static.serve, {'document_root': settings.STATIC_ROOT}),
     url (r'^media/(?P<path>.*)$', django.views.static.serve, {'document_root': settings.MEDIA_ROOT}),
 
+
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # static(如果符合这样规律的url，就去这个目录中找文件),没写找不到media_root中的媒体图片文件啊

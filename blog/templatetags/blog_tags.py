@@ -24,7 +24,6 @@ def get_archives(context,num=24):
         user=context['user']
 
         return Article.objects.filter(author=user).dates ('created_time', 'month', order='DESC')[:num]
-
     except Exception :
         pass
     return Article.objects.dates ('created_time', 'month', order='DESC')[:num]

@@ -3,19 +3,19 @@ from django.contrib.syndication.views import Feed
 from .models import Article
 
 
-class AllPostsRssFeed(Feed):
+class ArticleRssFeed(Feed):
     # 显示在聚合阅读器上的标题
-    title = "Django 博客教程演示项目"
+    title = "一个演示"
 
     # 通过聚合阅读器跳转到网站的地址
     link = "/"
 
     # 显示在聚合阅读器上的描述信息
-    description = "Django 博客教程演示项目测试文章"
+    description = "RSS测试内容"
 
     # 需要显示的内容条目
     def items(self):
-        return Article.objects.all()
+        return Article.objects.all()[:5]
 
     # 聚合器中显示的内容条目的标题
     def item_title(self, item):
@@ -23,4 +23,4 @@ class AllPostsRssFeed(Feed):
 
     # 聚合器中显示的内容条目的描述
     def item_description(self, item):
-        return item.body
+        return item.excerpt

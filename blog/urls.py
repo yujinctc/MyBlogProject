@@ -17,6 +17,7 @@ from django.conf.urls import url
 
 from . import views
 
+from .feeds import ArticleRssFeed
 
 app_name = 'blog'
 
@@ -32,6 +33,8 @@ urlpatterns = [
     url (r'^testMarkdown', views.ArticleEditView.as_view (), name='testMarkdown'),
 
     # url(r'^search/$', views.search, name='search'),
+
+    url(r'^rss/$', ArticleRssFeed(), name='rss'),
 
 ]
 

@@ -26,10 +26,10 @@ from comments.forms import CommentForm
 #     return render(request, 'blog/detail.html', context={'post': post})
 
 
-class MyBlogView(ListView):  #LoginRequiredMixin
+class MyBlogView(LoginRequiredMixin,ListView):  #
 
-    # login_url = '/login'
-    # redirect_field_name = 'redirect_to'
+    login_url = '/login'
+    redirect_field_name = 'redirect_to'
 
     model = Article
     template_name = 'myblog.html'
@@ -199,25 +199,6 @@ class IndexView(ListView): #LoginRequiredMixin
 
 
 
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.shortcuts import render
-
-def listing(request):
-    contact_list = Article.objects.all()
-    paginator = Paginator(contact_list, 5) # Show 25 contacts per page
-
-    page = request.GET.get('page')
-    try:
-        contacts = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-        contacts = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        contacts = paginator.page(paginator.num_pages)
-
-    return render(request, 'home.html', {'article_list': contacts})
-
 
 
 
@@ -259,19 +240,29 @@ def detail(request, pk):
 
 
 def archives(request, year, month):
-    article_list = Article.objects.filter (created_time__year=year,
+
+    try:
+        article_list = Article.objects.filter (created_time__year=year,
                                            created_time__month=month,
                                            author=request.user
                                            ).order_by ('-created_time')
-    return render (request, 'home.html', context={'article_list': article_list})
+    except:
+        article_list = Article.objects.filter (created_time__year=year,
+                                               created_time__month=month).order_by ('-created_time')
+    return render (request, 'myblog.html', context={'article_list': article_list})
 
 
 def category(request, pk):
     # 记得在开始部分导入 Category 类
     cate = get_object_or_404 (Category, pk=pk)
-    article_list = Article.objects.filter (category=cate,
+
+    try:
+        article_list = Article.objects.filter (category=cate,
                                            author=request.user).order_by ('-created_time')
-    return render (request, 'home.html', context={'article_list': article_list})
+    except:
+        article_list = Article.objects.filter (category=cate).order_by ('-created_time')
+
+    return render (request, 'myblog.html', context={'article_list': article_list})
 
 
 class TagView(ListView):
