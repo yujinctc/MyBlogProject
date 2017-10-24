@@ -86,6 +86,11 @@ class Article(models.Model):
     # 新增 views 字段记录阅读量
     views = models.PositiveIntegerField (default=0)
 
+
+    # 新增图片名
+
+    img = models.ImageField(upload_to='img',default='/static/img/f4.png')
+
     # 自定义 get_absolute_url 方法
     # 记得从 django.urls 中导入 reverse 函数
     def get_absolute_url(self):
@@ -108,7 +113,7 @@ class Article(models.Model):
             # 先将 Markdown 文本渲染成 HTML 文本
             # strip_tags 去掉 HTML 文本的全部 HTML 标签
             # 从文本摘取前 54 个字符赋给 excerpt
-            self.excerpt = strip_tags (md.convert (self.body))[:150]
+            self.excerpt = strip_tags (md.convert (self.body))[:50]
 
         # 调用父类的 save 方法将数据保存到数据库中
         super (Article, self).save (*args, **kwargs)

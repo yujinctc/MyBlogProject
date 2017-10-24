@@ -39,20 +39,27 @@
                 </div>
             </form>
         {% else %}
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button class='btn btn-lg btn-primary'
-                            onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
+            <form role="search" method="get" class="navbar-form navbar-right" action="{% url 'haystack_search' %}">
+                <div class="form-group">
+                    <input type="search" name="q" placeholder="搜索" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-md btn-primary"><span class="glyphicon glyphicon-search"
+                                                                           aria-hidden="true"></span> Search
+                </button>
+
+
+            <button class='btn  btn-primary'
+                    onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
                         <span class="glyphicon glyphicon-user "
                               aria-hidden="true"></span>登录
-                    </button>
-                </li>
-            </ul>
+            </button>
+            </form>
         {% endif %}
 
     </div>
 
 {% endblock nav_bar %}
+
 
 
 {% block blog_main %}
@@ -61,41 +68,34 @@
 
     {% endif %}
     {% for article in article_list %}
-        <article class="post post-{{ article.pk }}">
-            <h3 class="entry-title">
-                <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
-            </h3>
-            <div class="entry-meta">
-                <span class="post-category">
-                    <a href="#">
-                    {% if article.category %}分类: {{ article.category.name }}&nbsp;&nbsp;&nbsp;
-                    {% endif %}
-                </a></span>
-                <span class="post-date"><a href="#"><time class="entry-date"
-                                                          datetime="{{ article.created_time }}">创作时间: {{ article.created_time| date:"Y-m-d" }}&nbsp;&nbsp;&nbsp;</time></a></span>
-                <span class="post-author"><a href="#">作者: {{ article.author }}&nbsp;&nbsp;&nbsp;</a></span>
-                {#                <span class="comments-link"><a href="#">4 评论</a></span>#}
-                {#                <span class="views-count"><a href="#">588 阅读</a></span>#}
+        <article class="post post-{{ article.pk }} row">
+            <div class="col-md-6">
+                <img src="{{ article.img.url }}" width="100%" height="100%">
+
             </div>
-            <div class="entry-content clearfix">
-                <p>{{ article.excerpt }}</p>
-                <p>{{ post.body|truncatechars:54 }}</p> 另一种显示摘要的方法
-                <div class="read-more cl-effect-14">
-                    <a href="{{ article.get_absolute_url }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+
+            <div class="col-md-6">
+                <br>
+                <span class="post-author ">{{ article.author }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="post-date"><a href="#"><time class="entry-date"
+                                                          datetime="{{ article.created_time }}">{{ article.created_time| date:"Y/m/d" }}&nbsp;&nbsp;&nbsp;</time></a></span>
+
+                <h3 class="entry-title">
+                    <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
+                </h3>
+
+                <div class="entry-content clearfix">
+                    <p>{{ article.title }}</p>
                 </div>
             </div>
+
+
         </article>
     {% empty %}
         <div class="no-post">暂时还没有发布的文章！</div>
     {% endfor %}
 
-    <!-- 简单分页效果
-    <div class="pagination-simple">
-        <a href="#">上一页</a>
-        <span class="current">第 6 页 / 共 11 页</span>
-        <a href="#">下一页</a>
-    </div>
-    -->
+
 
     <nav aria-label="Page navigation" class="text-center">
         <ul class="pagination">
@@ -129,7 +129,7 @@
                     {% endif %}
 
                     {% if page_obj.number|add:2 > page_obj.paginator.num_pages %}
-                        <li><a href="?page={{ page_obj.number|add:-3 }}">{{ page_obj.number|add:-3}}</a></li>
+                        <li><a href="?page={{ page_obj.number|add:-3 }}">{{ page_obj.number|add:-3 }}</a></li>
                     {% endif %}
 
 
@@ -152,7 +152,7 @@
                 {% endif %}
             {% else %}
                 {% for page in page_obj.paginator.page_range %}
-                    <li><a href="?page={{ page }}">{{ page }}</a></li>
+                    <li {% if page_obj.number == page %}class="active" {% endif %}><a href="?page={{ page }}" >{{ page }}</a></li>
                 {% endfor %}
             {% endif %}
             {% if page_obj.has_next %}
@@ -175,67 +175,73 @@
 
 {% block blog_sidebar %}
 
-    <div class="sidebar-module">
-        <h4>最新文章</h4>
-        {% get_recent_posts as recent_post_list %}
-        <ol class="list-unstyled">
-            {% for post in recent_post_list %}
-                <li>
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                </li>
-            {% empty %}
-                暂无文章！
-            {% endfor %}
-        </ol>
+    {# 文章 #}
+    <div class="text-left blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">最新文章</span></h2>
+        <div class="sidebar-module text-left">
+
+            {% get_recent_posts as recent_post_list %}
+            <ol class="list-unstyled">
+                {% for post in recent_post_list %}
+                    <li>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    </li>
+                {% empty %}
+                    暂无文章！
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 
-    <div class="sidebar-module">
-        <h4>归档</h4>
-        {% get_archives as date_list %}
-        <ol class="list-unstyled">
-            {% for date in date_list %}
-                <li>
-                    {#                                                这个模板标签的作用是解析视图函数 blog:archives 对应的 URL 模式，并把 URL 模式中的年和月替换成 date.year，date.month 的值#}
-                    <a href="{% url 'blog:archives' date.year date.month %}">{{ date.year }} 年 {{ date.month }} 月</a>
-                </li>
-            {% empty %}
-                暂无归档！
-            {% endfor %}
-        </ol>
-    </div>
-
-    <div class="sidebar-module">
-        <h4>分类</h4>
-        {% get_categories as category_list %}
-        <ol class="list-unstyled">
+     {# 标签 #}
+    <div class="blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">TAG cloud</span></h2>
+        <div class="sidebar-module blog-clear-padding" >
+            {% get_categories as category_list %}
+            <div>
             {% for category in category_list %}
-                <li>
-                    <a href="{% url 'blog:category' category.pk %}">{{ category.name }} <span
-                            class="post-count">({{ category.num_posts }})</span></a>
-                </li>
+
+                <a href="{% url 'blog:category' category.pk %}" class="blog-tag">{{ category.name }} <span
+                        class="post-count">({{ category.num_posts }})</span></a>
+
             {% empty %}
                 暂无分类！
             {% endfor %}
-        </ol>
-    </div>
 
-    <div class="sidebar-module">
-        <h4>标签云</h4>
-        {% get_tags as tag_list %}
-        <ol class="list-unstyled">
-            {% for tag in tag_list %}
-                <li>
-                    <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}</a>
-                </li>
+            </div>
+
+        </div>
+
+    </div>
+    {# 归档 #}
+    <div class="text-left blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">归档</span></h2>
+        <div class="sidebar-module blog-clear-padding text-left ">
+
+
+            {% get_archives as date_list %}
+
+            {% for date in date_list %}
+
+                <a href="{% url 'blog:archives' date.year date.month %}" class="blog-tag clearfloat">{{ date.year }} 年 {{ date.month }} 月</a>
+
+
             {% empty %}
-                暂无标签！
+                暂无归档！
             {% endfor %}
-        </ol>
+
+        </div>
     </div>
 
-    <div class="sidebar-module">
-        {#                    {% url 'rss' %}#}
-        <a href="{% url 'blog:rss' %}"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+
+
+    {# rss #}
+    <div class="blog-sidebar-widget blog-bor">
+        <h2 class="blog-text-center blog-title"><span class="siderbar-title">RSS</span></h2>
+        <div class="sidebar-module">
+
+            <a href="{% url 'blog:rss' %}"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+        </div>
     </div>
 
 

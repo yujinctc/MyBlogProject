@@ -43,15 +43,21 @@
                 </div>
             </form>
         {% else %}
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button class='btn btn-lg btn-primary'
-                            onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
+            <form role="search" method="get" class="navbar-form navbar-right" action="{% url 'haystack_search' %}">
+                <div class="form-group">
+                    <input type="search" name="q" placeholder="搜索" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-md btn-primary"><span class="glyphicon glyphicon-search"
+                                                                           aria-hidden="true"></span> Search
+                </button>
+
+
+            <button class='btn  btn-primary'
+                    onclick="javascrtpt:window.location.href='{% url "blogauth:login" %}'">
                         <span class="glyphicon glyphicon-user "
                               aria-hidden="true"></span>登录
-                    </button>
-                </li>
-            </ul>
+            </button>
+            </form>
         {% endif %}
 
     </div>
@@ -62,7 +68,7 @@
 {% block blog_main %}
     <article class="post post-{{ article.pk }}">
         <header class="entry-header">
-            <h1 class="entry-title">{{ article.title }}</h1>
+            <h2 class="blog-title text-center ">{{ article.title }}</h2>
             <div class="entry-meta">
                 <span class="post-category"><a href="#">{{ article.category.name }}</a></span>
                 <span class="post-date"><a href="#"><time class="entry-date"
@@ -128,67 +134,73 @@
 
 {% block blog_sidebar %}
 
-    <div class="sidebar-module">
-        <h4>最新文章</h4>
-        {% get_recent_posts as recent_post_list %}
-        <ol class="list-unstyled">
-            {% for post in recent_post_list %}
-                <li>
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                </li>
-            {% empty %}
-                暂无文章！
-            {% endfor %}
-        </ol>
+    {# 文章 #}
+    <div class="text-left blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">最新文章</span></h2>
+        <div class="sidebar-module text-left">
+
+            {% get_recent_posts as recent_post_list %}
+            <ol class="list-unstyled">
+                {% for post in recent_post_list %}
+                    <li>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    </li>
+                {% empty %}
+                    暂无文章！
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 
-    <div class="sidebar-module">
-        <h4>归档</h4>
-        {% get_archives as date_list %}
-        <ol class="list-unstyled">
-            {% for date in date_list %}
-                <li>
-                    {#                                                这个模板标签的作用是解析视图函数 blog:archives 对应的 URL 模式，并把 URL 模式中的年和月替换成 date.year，date.month 的值#}
-                    <a href="{% url 'blog:archives' date.year date.month %}">{{ date.year }} 年 {{ date.month }} 月</a>
-                </li>
-            {% empty %}
-                暂无归档！
-            {% endfor %}
-        </ol>
-    </div>
-
-    <div class="sidebar-module">
-        <h4>分类</h4>
-        {% get_categories as category_list %}
-        <ol class="list-unstyled">
+     {# 标签 #}
+    <div class="blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">TAG cloud</span></h2>
+        <div class="sidebar-module blog-clear-padding" >
+            {% get_categories as category_list %}
+            <div>
             {% for category in category_list %}
-                <li>
-                    <a href="{% url 'blog:category' category.pk %}">{{ category.name }} <span
-                            class="post-count">({{ category.num_posts }})</span></a>
-                </li>
+
+                <a href="{% url 'blog:category' category.pk %}" class="blog-tag">{{ category.name }} <span
+                        class="post-count">({{ category.num_posts }})</span></a>
+
             {% empty %}
                 暂无分类！
             {% endfor %}
-        </ol>
-    </div>
 
-    <div class="sidebar-module">
-        <h4>标签云</h4>
-        {% get_tags as tag_list %}
-        <ol class="list-unstyled">
-            {% for tag in tag_list %}
-                <li>
-                    <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}</a>
-                </li>
+            </div>
+
+        </div>
+
+    </div>
+    {# 归档 #}
+    <div class="text-left blog-sidebar-widget blog-bor ">
+        <h2 class="blog-title"><span class="siderbar-title">归档</span></h2>
+        <div class="sidebar-module blog-clear-padding text-left ">
+
+
+            {% get_archives as date_list %}
+
+            {% for date in date_list %}
+
+                <a href="{% url 'blog:archives' date.year date.month %}" class="blog-tag clearfloat">{{ date.year }} 年 {{ date.month }} 月</a>
+
+
             {% empty %}
-                暂无标签！
+                暂无归档！
             {% endfor %}
-        </ol>
+
+        </div>
     </div>
 
-    <div class="sidebar-module">
-        {#                            {% url 'rss' %}#}
-        <a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+
+
+    {# rss #}
+    <div class="blog-sidebar-widget blog-bor">
+        <h2 class="blog-text-center blog-title"><span class="siderbar-title">RSS</span></h2>
+        <div class="sidebar-module">
+
+            <a href="{% url 'blog:rss' %}"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+        </div>
     </div>
 
 

@@ -276,6 +276,7 @@ class TagView(ListView):
 
 
 
+
 class ArticleEditView(LoginRequiredMixin,TemplateView):
 
     #
@@ -295,7 +296,7 @@ class ArticleEditView(LoginRequiredMixin,TemplateView):
         # category = get_object_or_404 (Category, pk=request.user.pk)
 
         if request.method == 'POST':
-            form = ArticleForm (request.POST)
+            form = ArticleForm (request.POST, request.FILES)
             if form.is_valid ():
                 article = form.save (commit=False)
 
@@ -306,6 +307,8 @@ class ArticleEditView(LoginRequiredMixin,TemplateView):
                 # article.category = category
 
                 article.save ()
+
+
 
                 return redirect (article)
             else:
