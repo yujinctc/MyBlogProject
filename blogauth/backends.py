@@ -1,7 +1,7 @@
 from .models import User
 
-class EmailBackend(object):
 
+class EmailBackend(object):
     def authenticate(self, request, **credentials):
         # 要注意登录表单中用户输入的用户名或者邮箱的 field 名均为 username
         email = credentials.get('email', credentials.get('username'))

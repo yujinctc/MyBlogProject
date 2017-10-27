@@ -14,7 +14,8 @@ class ArticleRssFeed(Feed):
     description = "RSS测试内容"
 
     # 需要显示的内容条目
-    def items(self):
+    @staticmethod
+    def items():
         return Article.objects.all()[:5]
 
     # 聚合器中显示的内容条目的标题

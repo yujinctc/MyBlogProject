@@ -1,8 +1,7 @@
 from django.contrib import admin
-
-# Register your models here.
-
 from .models import Article, Category, Tag
+from markdownx.admin import MarkdownxModelAdmin
+from .models import MyModel
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -19,20 +18,10 @@ class TagAdmin(admin.ModelAdmin):
     # 显示模型的列表展示信息。
     list_display = ['name']
 
+
 # 把新增的 PostAdmin 也注册进来
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Category,CategoryAdmin)
-admin.site.register(Tag,CategoryAdmin)
-
-
-
-
-
-
-
-from markdownx.admin import MarkdownxModelAdmin
-from .models import MyModel
-
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Tag, CategoryAdmin)
 
 admin.site.register(MyModel, MarkdownxModelAdmin)
-

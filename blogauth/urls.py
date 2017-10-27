@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf.urls import url
 from . import views
 from django.contrib.auth import views as authviews
 
@@ -21,9 +21,8 @@ app_name = 'blogauth'
 
 urlpatterns = [
 
-    url (r'^register/', views.register, name='register'),
-    url (r'^register/', views.register, name='register'),
-
+    url(r'^register/', views.register, name='register'),
+    url(r'^register/', views.register, name='register'),
 
     #
     # # as别名的方式，引入了auth自带的

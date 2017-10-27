@@ -9,7 +9,6 @@ class MyForm(forms.Form):
 
 
 class ArticleForm(models.ModelForm):
-
     class Meta:
         model = Article
-        fields = ('title','excerpt','body','category','img')
+        fields = ('title', 'excerpt', 'body', 'category', 'img')

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Article
 from blogauth.models import User
 
-from .models import Comment
+# from .models import Comment
 from .forms import CommentForm
 
 
@@ -12,7 +12,7 @@ def post_comment(request, article_pk):
     # 这个函数的作用是当获取的文章（Post）存在时，则获取；否则返回 404 页面给用户。
     article = get_object_or_404(Article, pk=article_pk)
 
-    author = get_object_or_404 (User, pk=request.user.pk)
+    author = get_object_or_404(User, pk=request.user.pk)
 
     # HTTP 请求有 get 和 post 两种，一般用户通过表单提交数据都是通过 post 请求，
     # 因此只有当用户的请求为 post 时才需要处理表单数据。
