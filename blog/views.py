@@ -44,7 +44,7 @@ class MyBlogView(LoginRequiredMixin, ListView):  #
         else:
             try:
                 queryset = queryset.filter(author=self.request.user).order_by('-created_time')
-            except:
+            except TypeError as e:
                 queryset = queryset.order_by('-created_time')
 
         return queryset
@@ -226,14 +226,17 @@ def detail(request, pk):
 
 
 def archives(request, year, month):
+
     try:
         article_list = Article.objects.filter(created_time__year=year,
                                               created_time__month=month,
                                               author=request.user
                                               ).order_by('-created_time')
-    except:
+    except TypeError as e:
+
         article_list = Article.objects.filter(created_time__year=year,
                                               created_time__month=month).order_by('-created_time')
+
     return render(request, 'myblog.html', context={'article_list': article_list})
 
 
@@ -244,7 +247,7 @@ def category(request, pk):
     try:
         article_list = Article.objects.filter(category=cate,
                                               author=request.user).order_by('-created_time')
-    except:
+    except TypeError as e:
         article_list = Article.objects.filter(category=cate).order_by('-created_time')
 
     return render(request, 'myblog.html', context={'article_list': article_list})
