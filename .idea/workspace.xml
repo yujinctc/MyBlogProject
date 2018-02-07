@@ -2,147 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b6a6ad-5744-40dc-9125-68d92efec1be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f16.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f161.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/media/img/f8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/urls.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/feeds.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0002_mymodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0003_auto_20171018_1050.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0004_auto_20171018_1135.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0005_auto_20171018_1148.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0006_auto_20171018_1223.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/0007_article_img.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/search_indexes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/autumn.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/borland.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/bw.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/colorful.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/emacs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/friendly.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/fruity.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/github.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/manni.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/murphy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/native.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/pastie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/perldoc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/tango.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/trac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/vim.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/vs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/zenburn.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/css/pace.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/img/me.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/js/jquery-2.1.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/js/pace.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/blog/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/templates/search/indexes/blog/article_text.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/templates/testMarkdown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/whoosh_cn_backend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/backends.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/migrations/0002_auto_20171020_1730.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/static/blogauth/register_login_page/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/static/blogauth/register_login_page/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/static/blogauth/register_login_page/js/particles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/templates/base_auth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/templates/blogauth/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/templatetags/blogauth_filter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogauth/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/0002_auto_20171017_1615.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/0003_auto_20171018_0307.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/0004_auto_20171018_0849.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/0005_auto_20171018_1211.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comments/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/dog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f16.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f161.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/屏幕快照_2017-06-28_20.47.29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/16cf739d-2f1b-4bc9-82b4-8528a91ca767.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/6f25ee5f-43e0-4e1c-843b-88c1b0ae4d55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/8d4aabd4-fc35-4424-bb4e-6559204b2c5a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/a318d68e-0996-40a5-ada9-d7a7e42ef317.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/b30e66b7-15bb-426d-a89d-fd7ddd1761b2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/c41a96dd-7130-4d26-a57a-7c6af77668a8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBlogProject/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_5gj24ax1t6w221w9.seg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_fqi9fxomf5zkr3fp.seg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_157.toc" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/__init__.py" afterPath="$PROJECT_DIR$/apps/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/dog.jpg" afterPath="$PROJECT_DIR$/config/media/img/dog.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f10.jpg" afterPath="$PROJECT_DIR$/common_static/img/f10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f12.jpg" afterPath="$PROJECT_DIR$/common_static/img/f12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f13.jpg" afterPath="$PROJECT_DIR$/common_static/img/f13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f14.jpg" afterPath="$PROJECT_DIR$/common_static/img/f14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f15.jpg" afterPath="$PROJECT_DIR$/common_static/img/f15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f16.jpeg" afterPath="$PROJECT_DIR$/common_static/img/f16.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f16.jpg" afterPath="$PROJECT_DIR$/common_static/img/f16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f161.jpg" afterPath="$PROJECT_DIR$/common_static/img/f161.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f17.jpg" afterPath="$PROJECT_DIR$/common_static/img/f17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f18.jpg" afterPath="$PROJECT_DIR$/common_static/img/f18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f19.jpg" afterPath="$PROJECT_DIR$/common_static/img/f19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f20.jpg" afterPath="$PROJECT_DIR$/common_static/img/f20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f22.jpg" afterPath="$PROJECT_DIR$/common_static/img/f22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f4.png" afterPath="$PROJECT_DIR$/common_static/img/f4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f5.jpg" afterPath="$PROJECT_DIR$/common_static/img/f5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f6.jpg" afterPath="$PROJECT_DIR$/common_static/img/f6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f7.jpg" afterPath="$PROJECT_DIR$/common_static/img/f7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/f8.jpg" afterPath="$PROJECT_DIR$/common_static/img/f8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/img/屏幕快照_2017-06-28_20.47.29.png" afterPath="$PROJECT_DIR$/config/media/img/屏幕快照_2017-06-28_20.47.29.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/16cf739d-2f1b-4bc9-82b4-8528a91ca767.png" afterPath="$PROJECT_DIR$/config/media/markdownx/16cf739d-2f1b-4bc9-82b4-8528a91ca767.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/6f25ee5f-43e0-4e1c-843b-88c1b0ae4d55.jpg" afterPath="$PROJECT_DIR$/config/media/markdownx/6f25ee5f-43e0-4e1c-843b-88c1b0ae4d55.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/8d4aabd4-fc35-4424-bb4e-6559204b2c5a.jpg" afterPath="$PROJECT_DIR$/config/media/markdownx/8d4aabd4-fc35-4424-bb4e-6559204b2c5a.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/a318d68e-0996-40a5-ada9-d7a7e42ef317.png" afterPath="$PROJECT_DIR$/config/media/markdownx/a318d68e-0996-40a5-ada9-d7a7e42ef317.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/b30e66b7-15bb-426d-a89d-fd7ddd1761b2.jpg" afterPath="$PROJECT_DIR$/config/media/markdownx/b30e66b7-15bb-426d-a89d-fd7ddd1761b2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/media/markdownx/c41a96dd-7130-4d26-a57a-7c6af77668a8.jpg" afterPath="$PROJECT_DIR$/config/media/markdownx/c41a96dd-7130-4d26-a57a-7c6af77668a8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/settings.py" afterPath="$PROJECT_DIR$/config/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MyBlogProject/wsgi.py" afterPath="$PROJECT_DIR$/config/wsgi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/__init__.py" afterPath="$PROJECT_DIR$/base/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/migrations/__init__.py" afterPath="$PROJECT_DIR$/config/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterPath="$PROJECT_DIR$/libs/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myblog_wsgi.ini" afterPath="$PROJECT_DIR$/myblog_wsgi.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/search/search.html" afterPath="$PROJECT_DIR$/templates/search/search.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -216,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/config/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -236,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/apps/blog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -290,7 +185,7 @@
         <entry file="file://$PROJECT_DIR$/config/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -757,14 +652,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30112046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30112046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492998" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30114448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31545064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1210,7 +1104,7 @@
     <entry file="file://$PROJECT_DIR$/config/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1262,7 +1156,7 @@
     <entry file="file://$PROJECT_DIR$/apps/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1286,7 +1180,7 @@
     <entry file="file://$PROJECT_DIR$/config/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
