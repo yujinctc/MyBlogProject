@@ -76,7 +76,8 @@
         {% for result in page.object_list %}
             <article class="post post-{{ result.object.pk }} row">
                 <div class="col-md-6">
-                    <img src="{{ article.img.url }}" width="100%" height="100%">
+
+                    <img src="{{ result.object.img.url }}" width="100%" height="100%">
 
                 </div>
                 <div class="col-md-6">
@@ -86,7 +87,8 @@
                     </h2>
                     <div class="entry-meta">
                     <span class="post-category">
-                        <a href="{% url 'blog:category' result.object.category.pk %}">
+{#                        <a href="{% url 'blog:category' result.object.category.pk  %}">#}
+                        <a href="#">
                             分类:{{ result.object.category.name }}&nbsp;&nbsp;&nbsp;</a></span>
                         <span class="post-date"><a href="#">
                             <time class="entry-date" datetime="{{ result.object.created_time }}">
@@ -124,7 +126,7 @@
                     {% if page.has_next %}
                         <li><a href="?q={{ query }}&amp;page={{ page.next_page_number }}">Next
                             &raquo;</a></li>
-                        {% else %}
+                    {% else %}
                         <li><a href="" class="disabled">Next
                             &raquo;</a></li>
                     {% endif %}
